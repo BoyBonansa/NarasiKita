@@ -53,80 +53,78 @@ const quotes = {
         },
         {
             text: "(Kehilangan adalah bagian dari hidup.) — Terkadang, perpisahan memberi kita pelajaran berharga.",
-            author: "Anonim"
+            author: "Joshua Arnold"
         },
         {
             text: "(Hati yang patah adalah jendela menuju kebangkitan.) — Dari kesedihan, kita belajar untuk bangkit.",
-            author: "Anonim"
+            author: "Atma Putera"
         }
     ],
     cinta: [
         {
             text: "(Cinta bukan tentang memiliki, tetapi tentang memberi dan saling melengkapi.) — Cinta adalah perjalanan, bukan tujuan.",
-            author: "Anonim"
+            author: "Dimitry Novikov"
         },
         {
             text: "(Setiap cinta adalah unik.) — Jangan bandingkan cinta yang kau miliki dengan orang lain.",
-            author: "Anonim"
+            author: "Hiroshi Amano"
         },
         {
             text: "(Cinta adalah kekuatan yang mengubah segalanya.) — Dengan cinta, kita bisa melewati segalanya.",
-            author: "Anonim"
+            author: "vyohec milosav"
         }
     ],
     kehidupan: [
         {
             text: "(Hidup adalah tentang membuat pilihan, dan pilihanmu menentukan jalanmu.) — Setiap keputusan adalah langkah menuju masa depan.",
-            author: "Anonim"
+            author: "Virgoun"
         },
         {
             text: "(Keberanian bukanlah ketiadaan ketakutan.) — Keberanian adalah kemampuan untuk menghadapi ketakutan.",
-            author: "Anonim"
+            author: "Dmitry Novikov"
         },
         {
             text: "(Hidup adalah seni menggambar tanpa penghapus.) — Setiap kesalahan adalah bagian dari perjalanan.",
-            author: "Anonim"
+            author: "Sergei Beskopytnyi"
         }
     ]
 };
 
-// Variabel untuk melacak kutipan yang sedang ditampilkan
-let currentQuoteIndex = 0;
+// Variabel untuk melacak kategori saat ini dan kutipan terakhir yang ditampilkan
 let currentCategory = "";
+let lastQuoteIndex = -1;
 
-// Fungsi untuk menampilkan kutipan berdasarkan kategori
+// Fungsi untuk menampilkan kutipan berikutnya berdasarkan kategori
 function showNextQuote() {
-    const quote = quotes[currentCategory][currentQuoteIndex];
+    let randomIndex;
+
+    do {
+        randomIndex = Math.floor(Math.random() * quotes[currentCategory].length);
+    } while (randomIndex === lastQuoteIndex); // Pastikan tidak menggunakan kutipan yang sama berurutan
+
+    lastQuoteIndex = randomIndex; // Simpan indeks kutipan yang terakhir ditampilkan
+
+    const quote = quotes[currentCategory][randomIndex];
     document.getElementById("content-quotes-text").innerText = quote.text;
     document.getElementById("header-quotes-text").innerText = quote.author;
-    currentQuoteIndex++;
-
-    // Reset indeks jika sudah mencapai akhir kutipan
-    if (currentQuoteIndex >= quotes[currentCategory].length) {
-        currentQuoteIndex = 0; // Kembali ke awal untuk perulangan
-        alert("Semua kutipan telah ditampilkan. Mulai lagi!");
-    }
 }
 
 // Event listener untuk tombol kutipan galau
 document.getElementById("quotes-galau").addEventListener("click", () => {
     currentCategory = "galau";
-    currentQuoteIndex = 0; // Reset indeks kutipan
-    showNextQuote();
+    showNextQuote(); // Tampilkan kutipan pertama
 });
 
 // Event listener untuk tombol kutipan cinta
 document.getElementById("quotes-cinta").addEventListener("click", () => {
     currentCategory = "cinta";
-    currentQuoteIndex = 0; // Reset indeks kutipan
-    showNextQuote();
+    showNextQuote(); // Tampilkan kutipan pertama
 });
 
 // Event listener untuk tombol kutipan kehidupan
 document.getElementById("quotes-kehidupan").addEventListener("click", () => {
     currentCategory = "kehidupan";
-    currentQuoteIndex = 0; // Reset indeks kutipan
-    showNextQuote();
+    showNextQuote(); // Tampilkan kutipan pertama
 });
 
 // Event listener untuk menyalin kutipan
@@ -138,4 +136,5 @@ document.getElementById("salin-quotes").addEventListener("click", () => {
         console.error("Gagal menyalin: ", err);
     });
 });
+
 });
