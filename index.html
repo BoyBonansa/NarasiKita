@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NarasiKita</title>
+
+    <!-- icon -->
+    <link rel="icon" href="assets/Icon/icon.png">
+
+    <!-- css -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+
+</head>
+<body>
+
+    <!-- navbar -->
+    <nav class="navbar">
+        <div class="navbar-left">
+            <img src="assets/Icon/icon.png" alt="icon">
+            <h1>Narasi<span>Kita</span>.</h1>
+        </div>
+        <div class="navbar-right">
+            <!-- icon Menu -->
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-menu"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+        </div>
+        <div class="navbar-nav">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- home -->
+    <section class="home" id="home">
+
+        <!-- home content -->
+        <div class="home-content">
+        <div class="home-left">
+            <h2>Selamat datang di Website resmi <span>NarasiKita</span>.</h2>
+            <p class="created">Created at 28 Sept 2024 by <span>Boy Bonansa</span></p>
+            <div class="quotes">
+                <h2>Ingin mendapatkan kata-kata random hari ini ?</h2>
+                <button type="submit" id="quotes-galau">Saya ingin kata-kata tentang galau</button>
+                <button type="submit" id="quotes-cinta">Saya ingin kata-kata tentang cinta</button>
+                <button type="submit" id="quotes-kehidupan">Saya ingin kata-kata tentang kehidupan</button>
+                <div class="quotes-content">
+                    <div class="quotes-text">
+                        <h3 id="header-quotes-text">frederick once</h3>
+                        <p id="content-quotes-text">(Benang tak terlihat adalah ikatan yang terkuat.)
+                            — Kadang, perasaan yang tak terungkap justru yang paling dalam dan tak terpisahkan.</p>
+                    </div>
+                    <svg xmlns="http://www.w3.org/2000/svg" id="salin-quotes" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-copy"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path><title>Copy Text</title></svg>
+                </div>
+            </div>
+        </div>
+        <div class="home-right">
+            <div class="profile-card">
+                <div class="profile-header">
+                    <div class="header-left">
+                        <!-- arrow-left -->
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-left"><line x1="19" y1="12" x2="5" y2="12"></line><polyline points="12 19 5 12 12 5"></polyline></svg>
+                    </div>
+                    <div class="header-right">
+                        <!-- love -->
+                        <svg xmlns="http://www.w3.org/2000/svg" id="profile-love" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-heart"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg> 
+                        <!-- menu -->
+                        <svg xmlns="http://www.w3.org/2000/svg" id="profile-menu" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-menu"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+                    </div>
+                </div>
+                <div class="profile-content">
+                    <img src="assets/Img/fotbar-15.jpeg" alt="boy&lita">
+                    <div class="profile-name">
+                        <h4>Boy Bonansa & Verlita Eka Febrianti</h4>
+                        <p>We are a cute couple who love each other</p>
+                    </div>
+                    <button type="button" id="send-message"><a href="#contact">Kirim pesan</a></button>
+                </div>
+                <div class="profile-footer">
+                    <div class="box">
+                        <!-- instagram -->
+                        <svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 48 48" width="48px" height="48px"><radialGradient id="yOrnnhliCrdS2gy~4tD8ma" cx="19.38" cy="42.035" r="44.899" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#fd5"/><stop offset=".328" stop-color="#ff543f"/><stop offset=".348" stop-color="#fc5245"/><stop offset=".504" stop-color="#e64771"/><stop offset=".643" stop-color="#d53e91"/><stop offset=".761" stop-color="#cc39a4"/><stop offset=".841" stop-color="#c837ab"/></radialGradient><path fill="url(#yOrnnhliCrdS2gy~4tD8ma)" d="M34.017,41.99l-20,0.019c-4.4,0.004-8.003-3.592-8.008-7.992l-0.019-20	c-0.004-4.4,3.592-8.003,7.992-8.008l20-0.019c4.4-0.004,8.003,3.592,8.008,7.992l0.019,20	C42.014,38.383,38.417,41.986,34.017,41.99z"/><radialGradient id="yOrnnhliCrdS2gy~4tD8mb" cx="11.786" cy="5.54" r="29.813" gradientTransform="matrix(1 0 0 .6663 0 1.849)" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#4168c9"/><stop offset=".999" stop-color="#4168c9" stop-opacity="0"/></radialGradient><path fill="url(#yOrnnhliCrdS2gy~4tD8mb)" d="M34.017,41.99l-20,0.019c-4.4,0.004-8.003-3.592-8.008-7.992l-0.019-20	c-0.004-4.4,3.592-8.003,7.992-8.008l20-0.019c4.4-0.004,8.003,3.592,8.008,7.992l0.019,20	C42.014,38.383,38.417,41.986,34.017,41.99z"/><path fill="#fff" d="M24,31c-3.859,0-7-3.14-7-7s3.141-7,7-7s7,3.14,7,7S27.859,31,24,31z M24,19c-2.757,0-5,2.243-5,5	s2.243,5,5,5s5-2.243,5-5S26.757,19,24,19z"/><circle cx="31.5" cy="16.5" r="1.5" fill="#fff"/><path fill="#fff" d="M30,37H18c-3.859,0-7-3.14-7-7V18c0-3.86,3.141-7,7-7h12c3.859,0,7,3.14,7,7v12	C37,33.86,33.859,37,30,37z M18,13c-2.757,0-5,2.243-5,5v12c0,2.757,2.243,5,5,5h12c2.757,0,5-2.243,5-5V18c0-2.757-2.243-5-5-5H18z"/></svg>
+                        <div class="profile-social-media">
+                            <a href="#" target="_blank">Verlita Eka Febrianti</a>
+                            <a href="#" target="_blank">Boy Bonansa</a>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <!-- youtube -->
+                        <svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 48 48" width="48px" height="48px"><path fill="#FF3D00" d="M43.2,33.9c-0.4,2.1-2.1,3.7-4.2,4c-3.3,0.5-8.8,1.1-15,1.1c-6.1,0-11.6-0.6-15-1.1c-2.1-0.3-3.8-1.9-4.2-4C4.4,31.6,4,28.2,4,24c0-4.2,0.4-7.6,0.8-9.9c0.4-2.1,2.1-3.7,4.2-4C12.3,9.6,17.8,9,24,9c6.2,0,11.6,0.6,15,1.1c2.1,0.3,3.8,1.9,4.2,4c0.4,2.3,0.9,5.7,0.9,9.9C44,28.2,43.6,31.6,43.2,33.9z"/><path fill="#FFF" d="M20 31L20 17 32 24z"/></svg>
+                        <div class="profile-social-media">
+                            <a href="#" target="_blank">Boy Bonansa</a>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <!-- whatsapp -->
+                        <svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 48 48" width="48px" height="48px" fill-rule="evenodd" clip-rule="evenodd"><path fill="#fff" d="M4.868,43.303l2.694-9.835C5.9,30.59,5.026,27.324,5.027,23.979C5.032,13.514,13.548,5,24.014,5c5.079,0.002,9.845,1.979,13.43,5.566c3.584,3.588,5.558,8.356,5.556,13.428c-0.004,10.465-8.522,18.98-18.986,18.98c-0.001,0,0,0,0,0h-0.008c-3.177-0.001-6.3-0.798-9.073-2.311L4.868,43.303z"/><path fill="#fff" d="M4.868,43.803c-0.132,0-0.26-0.052-0.355-0.148c-0.125-0.127-0.174-0.312-0.127-0.483l2.639-9.636c-1.636-2.906-2.499-6.206-2.497-9.556C4.532,13.238,13.273,4.5,24.014,4.5c5.21,0.002,10.105,2.031,13.784,5.713c3.679,3.683,5.704,8.577,5.702,13.781c-0.004,10.741-8.746,19.48-19.486,19.48c-3.189-0.001-6.344-0.788-9.144-2.277l-9.875,2.589C4.953,43.798,4.911,43.803,4.868,43.803z"/><path fill="#cfd8dc" d="M24.014,5c5.079,0.002,9.845,1.979,13.43,5.566c3.584,3.588,5.558,8.356,5.556,13.428c-0.004,10.465-8.522,18.98-18.986,18.98h-0.008c-3.177-0.001-6.3-0.798-9.073-2.311L4.868,43.303l2.694-9.835C5.9,30.59,5.026,27.324,5.027,23.979C5.032,13.514,13.548,5,24.014,5 M24.014,42.974C24.014,42.974,24.014,42.974,24.014,42.974C24.014,42.974,24.014,42.974,24.014,42.974 M24.014,42.974C24.014,42.974,24.014,42.974,24.014,42.974C24.014,42.974,24.014,42.974,24.014,42.974 M24.014,4C24.014,4,24.014,4,24.014,4C12.998,4,4.032,12.962,4.027,23.979c-0.001,3.367,0.849,6.685,2.461,9.622l-2.585,9.439c-0.094,0.345,0.002,0.713,0.254,0.967c0.19,0.192,0.447,0.297,0.711,0.297c0.085,0,0.17-0.011,0.254-0.033l9.687-2.54c2.828,1.468,5.998,2.243,9.197,2.244c11.024,0,19.99-8.963,19.995-19.98c0.002-5.339-2.075-10.359-5.848-14.135C34.378,6.083,29.357,4.002,24.014,4L24.014,4z"/><path fill="#40c351" d="M35.176,12.832c-2.98-2.982-6.941-4.625-11.157-4.626c-8.704,0-15.783,7.076-15.787,15.774c-0.001,2.981,0.833,5.883,2.413,8.396l0.376,0.597l-1.595,5.821l5.973-1.566l0.577,0.342c2.422,1.438,5.2,2.198,8.032,2.199h0.006c8.698,0,15.777-7.077,15.78-15.776C39.795,19.778,38.156,15.814,35.176,12.832z"/><path fill="#fff" fill-rule="evenodd" d="M19.268,16.045c-0.355-0.79-0.729-0.806-1.068-0.82c-0.277-0.012-0.593-0.011-0.909-0.011c-0.316,0-0.83,0.119-1.265,0.594c-0.435,0.475-1.661,1.622-1.661,3.956c0,2.334,1.7,4.59,1.937,4.906c0.237,0.316,3.282,5.259,8.104,7.161c4.007,1.58,4.823,1.266,5.693,1.187c0.87-0.079,2.807-1.147,3.202-2.255c0.395-1.108,0.395-2.057,0.277-2.255c-0.119-0.198-0.435-0.316-0.909-0.554s-2.807-1.385-3.242-1.543c-0.435-0.158-0.751-0.237-1.068,0.238c-0.316,0.474-1.225,1.543-1.502,1.859c-0.277,0.317-0.554,0.357-1.028,0.119c-0.474-0.238-2.002-0.738-3.815-2.354c-1.41-1.257-2.362-2.81-2.639-3.285c-0.277-0.474-0.03-0.731,0.208-0.968c0.213-0.213,0.474-0.554,0.712-0.831c0.237-0.277,0.316-0.475,0.474-0.791c0.158-0.317,0.079-0.594-0.04-0.831C20.612,19.329,19.69,16.983,19.268,16.045z" clip-rule="evenodd"/></svg>
+                        <div class="profile-social-media">
+                            <a href="#" target="_blank">Boy Bonansa</a>
+                            <a href="#" target="_blank">Verlita Eka Febrianti</a>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <!-- tiktok -->
+                        <svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 48 48" width="48px" height="48px" fill-rule="evenodd" clip-rule="evenodd"><path fill="#212121" fill-rule="evenodd" d="M10.904,6h26.191C39.804,6,42,8.196,42,10.904v26.191 C42,39.804,39.804,42,37.096,42H10.904C8.196,42,6,39.804,6,37.096V10.904C6,8.196,8.196,6,10.904,6z" clip-rule="evenodd"/><path fill="#ec407a" fill-rule="evenodd" d="M29.208,20.607c1.576,1.126,3.507,1.788,5.592,1.788v-4.011 c-0.395,0-0.788-0.041-1.174-0.123v3.157c-2.085,0-4.015-0.663-5.592-1.788v8.184c0,4.094-3.321,7.413-7.417,7.413 c-1.528,0-2.949-0.462-4.129-1.254c1.347,1.376,3.225,2.23,5.303,2.23c4.096,0,7.417-3.319,7.417-7.413L29.208,20.607L29.208,20.607 z M30.657,16.561c-0.805-0.879-1.334-2.016-1.449-3.273v-0.516h-1.113C28.375,14.369,29.331,15.734,30.657,16.561L30.657,16.561z M19.079,30.832c-0.45-0.59-0.693-1.311-0.692-2.053c0-1.873,1.519-3.391,3.393-3.391c0.349,0,0.696,0.053,1.029,0.159v-4.1 c-0.389-0.053-0.781-0.076-1.174-0.068v3.191c-0.333-0.106-0.68-0.159-1.03-0.159c-1.874,0-3.393,1.518-3.393,3.391 C17.213,29.127,17.972,30.274,19.079,30.832z" clip-rule="evenodd"/><path fill="#fff" fill-rule="evenodd" d="M28.034,19.63c1.576,1.126,3.507,1.788,5.592,1.788v-3.157 c-1.164-0.248-2.194-0.856-2.969-1.701c-1.326-0.827-2.281-2.191-2.561-3.788h-2.923v16.018c-0.007,1.867-1.523,3.379-3.393,3.379 c-1.102,0-2.081-0.525-2.701-1.338c-1.107-0.558-1.866-1.705-1.866-3.029c0-1.873,1.519-3.391,3.393-3.391 c0.359,0,0.705,0.056,1.03,0.159V21.38c-4.024,0.083-7.26,3.369-7.26,7.411c0,2.018,0.806,3.847,2.114,5.183 c1.18,0.792,2.601,1.254,4.129,1.254c4.096,0,7.417-3.319,7.417-7.413L28.034,19.63L28.034,19.63z" clip-rule="evenodd"/><path fill="#81d4fa" fill-rule="evenodd" d="M33.626,18.262v-0.854c-1.05,0.002-2.078-0.292-2.969-0.848 C31.445,17.423,32.483,18.018,33.626,18.262z M28.095,12.772c-0.027-0.153-0.047-0.306-0.061-0.461v-0.516h-4.036v16.019 c-0.006,1.867-1.523,3.379-3.393,3.379c-0.549,0-1.067-0.13-1.526-0.362c0.62,0.813,1.599,1.338,2.701,1.338 c1.87,0,3.386-1.512,3.393-3.379V12.772H28.095z M21.635,21.38v-0.909c-0.337-0.046-0.677-0.069-1.018-0.069 c-4.097,0-7.417,3.319-7.417,7.413c0,2.567,1.305,4.829,3.288,6.159c-1.308-1.336-2.114-3.165-2.114-5.183 C14.374,24.749,17.611,21.463,21.635,21.38z" clip-rule="evenodd"/></svg>
+                        <div class="profile-social-media">
+                            <a href="#" target="_blank">Boy Bonansa</a>
+                            <a href="#" target="_blank">Verlita Eka Febrianti</a>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <!-- facebook -->
+                        <svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 48 48" width="48px" height="48px"><path fill="#039be5" d="M24 5A19 19 0 1 0 24 43A19 19 0 1 0 24 5Z"/><path fill="#fff" d="M26.572,29.036h4.917l0.772-4.995h-5.69v-2.73c0-2.075,0.678-3.915,2.619-3.915h3.119v-4.359c-0.548-0.074-1.707-0.236-3.897-0.236c-4.573,0-7.254,2.415-7.254,7.917v3.323h-4.701v4.995h4.701v13.729C22.089,42.905,23.032,43,24,43c0.875,0,1.729-0.08,2.572-0.194V29.036z"/></svg>
+                        <div class="profile-social-media">
+                            <a href="#" target="_blank">Boy Bonansa</a>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <!-- share -->
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-share-2"><circle cx="18" cy="5" r="3"></circle><circle cx="6" cy="12" r="3"></circle><circle cx="18" cy="19" r="3"></circle><line x1="8.59" y1="13.51" x2="15.42" y2="17.49"></line><line x1="15.41" y1="6.51" x2="8.59" y2="10.49"></line></svg>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <!-- About -->
+    <section class="about" id="about">
+        <div class="about-content">
+            <div class="kias">
+
+            </div>
+            <div class="about-left">
+                <p>Halo, kamu tahu nggak apa yang paling aku suka dari alam semesta ini? tanyaku dengan senyum samar yang menggantung di bibir. "Tentu saja, jawabannya adalah dia—Verlita Eka Febrianti. Perempuan paling cantik yang pernah kutemui, dan tak terduga, pertemuan kami terjadi di tempat yang sederhana: fotokopian. Lucu, kan?" Aku terkekeh pelan, mengenang kembali momen itu.
+                <br><br> Dari semua pesona di dunia ini, ada sesuatu yang berbeda saat dia tersenyum—terlebih ketika dia memakai kacamata. Ah, bagaimana bisa seseorang terlihat begitu sempurna? Seolah dia adalah karakter anime yang hidup di dunia nyata, dengan cahaya yang memancar lembut dari matanya.
+                <br><br>Aku, dengan segala keberanianku yang entah datang dari mana, memulai percakapan di WhatsApp. Sederhana, tapi penuh harap. Dan ternyata, perlahan aku mulai merasakan bahwa dia juga menyimpan ketertarikan yang sama. Rasanya seperti mimpi, namun setiap detik bersamanya membuatku yakin bahwa ini nyata.
+                <br><br>Kami terus melangkah, tanpa banyak basa-basi, seolah semesta memang sudah merencanakan semuanya. Hingga akhirnya, tanpa sadar, aku berhasil memenangkan hatinya, dan kini, kami masih berjalan beriringan, menikmati setiap detik kebersamaan.</p>
+            </div>
+            <div class="about-right">
+                <div class="quotes-box">
+                    <p>"Cinta adalah seperti senja yang datang perlahan, menghangatkan jiwa, mengubah langit menjadi lautan warna, tanpa pernah memintamu untuk terburu-buru memahaminya."</p>
+                </div>
+                <div class="quotes-box">
+                    <p>"Meski badai menggulung lautan hidup, di dalam hati yang tenang, selalu ada pelangi yang menunggu untuk muncul."</p>
+                </div>
+                <div class="quotes-box">
+                    <p>"Bahkan ketika bumi ini bergetar, bunga-bunga kecil di sela-sela bebatuan tetap mekar, mengajarkan kita bahwa keindahan tak pernah benar-benar hilang."</p>
+                </div>
+                <div class="quotes-box">
+                    <p>"Pernikahan adalah jalinan dua hati yang memilih untuk saling melengkapi, mengisi ruang-ruang kosong dengan kasih dan merajut mimpi bersama di bawah atap yang sama."</p>
+                </div>
+            </div> 
+        </div>
+    </section>
+
+    <!-- gallery -->
+    <section class="gallery" id="gallery">
+
+        <!-- foto-1 -->
+        <div class="gallery-box">
+            <div class="gallery-img">
+                <img src="assets/Img/fotbar-1.jpeg" alt="fotbar-1">
+            </div>
+            <p>@fotbar in Mernung</p>
+            <p class="tanggal">17 - Juni - 2024</p>
+            <a href="assets/Img/fotbar-1.jpeg" download="fotbar"><svg xmlns="http://www.w3.org/2000/svg" class="download-gallery" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-download"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg></a>
+        </div>
+
+        <!-- foto-2 -->
+        <div class="gallery-box">
+            <div class="gallery-img">
+                <img src="assets/Img/fotbar-5.jpeg" alt="fotbar-1">
+            </div>
+            <p>@fotbar in Chupacip</p>
+            <p class="tanggal">28 - Juni - 2024</p>
+            <a href="assets/Img/fotbar-5.jpeg" download="fotbar"><svg xmlns="http://www.w3.org/2000/svg" class="download-gallery" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-download"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg></a>
+        </div>
+
+        <!-- foto-3 -->
+        <div class="gallery-box">
+            <div class="gallery-img">
+                <img src="assets/Img/fotbar-9.jpeg" alt="fotbar-1">
+            </div>
+            <p>@fotbar in Taman</p>
+            <p class="tanggal">9 - Juli - 2024</p>
+            <a href="assets/Img/fotbar-9.jpeg" download="fotbar"><svg xmlns="http://www.w3.org/2000/svg" class="download-gallery" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-download"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg></a>
+        </div>
+
+        <!-- foto-4 -->
+        <div class="gallery-box">
+            <div class="gallery-img">
+                <img src="assets/Img/fotbar-15.jpeg" alt="fotbar-1">
+            </div>
+            <p>@fotbar in Wonerjo</p>
+            <p class="tanggal">18 - Juli - 2024</p>
+            <a href="assets/Img/fotbar-15.jpeg" download="fotbar"><svg xmlns="http://www.w3.org/2000/svg" class="download-gallery" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-download"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg></a>
+        </div>
+
+        <!-- foto-5 -->
+        <div class="gallery-box">
+            <div class="gallery-img">
+                <img src="assets/Img/fotbar-17.jpeg" alt="fotbar-1">
+            </div>
+            <p>@fotbar in Chupacip</p>
+            <p class="tanggal">27 - Juli - 2024</p>
+            <a href="assets/Img/fotbar-17" download="fotbar"><svg xmlns="http://www.w3.org/2000/svg" class="download-gallery" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-download"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg></a>
+        </div>
+
+        <!-- foto-6 -->
+        <div class="gallery-box">
+            <div class="gallery-img">
+                <img src="assets/Img/fotbar-23.jpeg" alt="fotbar-1">
+            </div>
+            <p>@fotbar in Chupacip</p>
+            <p class="tanggal">20 - Agustus - 2024</p>
+            <a href="assets/Img/fotbar-23" download="fotbar"><svg xmlns="http://www.w3.org/2000/svg" class="download-gallery" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-download"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg></a>
+        </div>
+
+        <!-- foto-7 -->
+        <div class="gallery-box">
+            <div class="gallery-img">
+                <img src="assets/Img/fotbar-25.jpeg" alt="fotbar-1">
+            </div>
+            <p>@fotbar in Taman</p>
+            <p class="tanggal">2 - September - 2024</p>
+            <a href="assets/Img/fotbar-25.jpeg" download="fotbar"><svg xmlns="http://www.w3.org/2000/svg" class="download-gallery" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-download"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg></a>
+        </div>
+
+        <!-- foto-8 -->
+        <div class="gallery-box">
+            <div class="gallery-img">
+                <img src="assets/Img/tangan.jpeg" alt="fotbar-1">
+            </div>
+            <p>@fotbar in Taman</p>
+            <p class="tanggal">17 - September - 2024</p>
+            <a href="assets/Img/tangan.jpeg" download="tangan"><svg xmlns="http://www.w3.org/2000/svg" class="download-gallery" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-download"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg></a>
+        </div>
+
+    </section>
+
+    <!-- contact -->
+    <section class="contact" id="contact">
+        <form action="#" method="POST">
+            <h2>Form pesan</h2>
+            <label for="tulis-pesan">Tulis Pesan:</label>
+            <textarea name="tulis-pesan" id="tulis-pesan" placeholder="exp: Website kamu sangat bagus!, Aku ingin berteman!, dll" cols="30" rows="10" autocomplete="off" required></textarea>
+            <label for="username">Masukkan nama kamu:</label>
+            <input type="text" name="username" id="username" autocomplete="off" placeholder="exp: Boy, Verlita, Fatah, dll" required>
+            <button type="submit" id="submit">Kirim</button>
+            <p id="result-submit"></p>
+        </form>
+    </section>
+
+    <!-- footer -->
+    <footer>
+        <p>© 2024 NarasiKita | ALL RIGHTS RESERVED Designed by <span>Boy Bonansa</span> </p>
+    </footer>
+
+    
+    <!-- javaScript -->
+    <script src="js/script.js"></script>
+</body>
+</html>
