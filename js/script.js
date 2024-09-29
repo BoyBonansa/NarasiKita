@@ -42,9 +42,6 @@ window.addEventListener('load', activateHomeOnLoad);
 
 // navbar
 
-const navbar = document.querySelector(".navbar-nav");
-const menuCheck = document.querySelector("#menuCheck");
-
 // quotes Function
 
 // Array kutipan dengan penulis untuk setiap kategori
